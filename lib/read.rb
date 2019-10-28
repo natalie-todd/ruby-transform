@@ -1,7 +1,7 @@
 
 class Read
   def read_input
-    "read the input"
+    ["first_name","last_name","dob","member_id","effective_date","expiry_date","phone_number"]
   end
 end
 

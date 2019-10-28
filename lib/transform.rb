@@ -1,7 +1,7 @@
 
 class Transform
   def transform_input
-    "transform the input"
+    ["first_name","last_name","dob","member_id","effective_date","expiry_date","phone_number"]
   end
 end
 
