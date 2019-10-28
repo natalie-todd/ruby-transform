@@ -5,4 +5,3 @@ end
 
 report = Report.new
 
-puts report.write_report
