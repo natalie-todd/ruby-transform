@@ -1,6 +1,5 @@
 class Report
   def write_report
-    "write report"
   end
 end
 
