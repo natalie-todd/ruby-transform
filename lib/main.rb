@@ -25,7 +25,7 @@ class Main
 end
 
 read = Read.new
-transform = Transform.new
+transform = Transform.new(read)
 calculate_report = CalculateReport.new
 output = Output.new
 report = Report.new
