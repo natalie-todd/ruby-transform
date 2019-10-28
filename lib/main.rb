@@ -1,30 +1,34 @@
+require './read.rb'
+require './transform.rb'
+require './calculate_report.rb'
+require './output.rb'
+require './report.rb'
+
 class Main
 
-  def read_input
-    puts 'read input'
+  def initialize(read, transform, calculate_report, output, report)
+    @read = read
+    @transform = transform
+    @calculate_report = calculate_report
+    @output = output
+    @report = report
   end
 
-  def transform_input
-    puts 'transform input'
+  def transform_file
+    @read.read_input
+    @transform.transform_input
+    @calculate_report.calculate_report
+    @output.write_output
+    @report.write_report
   end
 
-  def report
-    puts "create report"
-  end
-
-  def write_output
-    puts "write output"
-  end
-
-  def write_report
-    puts "write report"
-  end
 end
 
-instance = Main.new
+read = Read.new
+transform = Transform.new
+calculate_report = CalculateReport.new
+output = Output.new
+report = Report.new
+instance = Main.new(read, transform, calculate_report, output, report)
 
-puts instance.read_input
-puts instance.transform_input
-puts instance.report
-puts instance.write_output
-puts instance.write_report
+puts instance.transform_file
