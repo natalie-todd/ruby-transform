@@ -1,6 +1,5 @@
 class CalculateReport
   def calculate_report
-    "calculate what the report values will be"
   end
 end
 

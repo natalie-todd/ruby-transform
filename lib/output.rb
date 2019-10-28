@@ -9,7 +9,7 @@ class Output
   end
 
   def write_output
-  CSV.open("output.csv", "w") do |csv|
+  CSV.open("../output.csv", "w") do |csv|
     @transform.transform_input.by_row.each do |row|
       csv << [row]
     end
