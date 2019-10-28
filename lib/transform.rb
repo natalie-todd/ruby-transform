@@ -1,10 +1,15 @@
+require './read.rb'
 
 class Transform
-  def transform_input
-    ["first_name","last_name","dob","member_id","effective_date","expiry_date","phone_number"]
+
+  def initialize(read)
+    @read = read
   end
-end
 
-transform = Transform.new
+  def transform_input
+    @read.read_input
+    end
+  end
 
-puts transform.transform_input
+reader = Read.new
+transform = Transform.new(reader)

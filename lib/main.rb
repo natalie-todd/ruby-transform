@@ -25,10 +25,8 @@ class Main
 end
 
 read = Read.new
-transform = Transform.new
+transform = Transform.new(read)
 calculate_report = CalculateReport.new
-output = Output.new
+output = Output.new(transform)
 report = Report.new
 instance = Main.new(read, transform, calculate_report, output, report)
-
-puts instance.transform_file

@@ -7,5 +7,3 @@ class Read
 end
 
 read = Read.new
-
-puts read.read_input
