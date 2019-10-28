@@ -5,4 +5,3 @@ end
 
 report = CalculateReport.new
 
-puts report.calculate_report

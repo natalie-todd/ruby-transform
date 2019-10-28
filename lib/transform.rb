@@ -13,5 +13,3 @@ class Transform
 
 reader = Read.new
 transform = Transform.new(reader)
-
-puts transform.transform_input

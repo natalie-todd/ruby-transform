@@ -20,5 +20,3 @@ end
 reader = Read.new
 transformer = Transform.new(reader)
 write_output = Output.new(transformer)
-
-puts write_output.write_output
