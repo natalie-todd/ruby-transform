@@ -1,7 +1,8 @@
+require 'csv'
 
 class Read
   def read_input
-    ["first_name","last_name","dob","member_id","effective_date","expiry_date","phone_number"]
+    table = CSV.parse(File.read("../input.csv"), headers: true)
   end
 end
 
